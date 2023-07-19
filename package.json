@@ -2,9 +2,9 @@
   "name": "n-wget",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "dist/n-wget.js",
   "scripts": {
-    "start": "node src/index.js https://github.com/plopjs/plop/blob/main/plop-load.md",
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
     "bulid": "node esbuild.js",
@@ -16,9 +16,18 @@
   "bin": {
     "n-wget": "dist/n-wget.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuzhi1900/n-wget"
+  },
+  "keywords": [
+    "wget",
+    "node",
+    "node-wget",
+    "n-wget"
+  ],
+  "author": "Bert Huang",
+  "license": "MIT",
   "devDependencies": {
     "esbuild": "0.18.12",
     "eslint": "^8.0.1",
@@ -32,7 +41,6 @@
     "prettier": "^3.0.0"
   },
   "dependencies": {
-    "axios": "^1.4.0",
-    "chalk": "^5.3.0"
+    "axios": "^1.4.0"
   }
 }
